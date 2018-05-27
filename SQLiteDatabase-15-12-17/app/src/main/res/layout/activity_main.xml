@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg_3"
+    tools:context="com.example.ahsanhabib.sqlitedatabase_15_12_17.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="SQLite Database"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAddEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="Add Employee"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSearchEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddEmployee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Search Employee"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnUpdateEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSearchEmployee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Update Employee"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnDeleteEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdateEmployee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Delete Employee"
+        android:textSize="24sp" />
+</RelativeLayout>

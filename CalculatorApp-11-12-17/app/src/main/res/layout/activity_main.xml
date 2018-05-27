@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahsanhabib.calculatorapp_11_12_17.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Enter First Number"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etnum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnum1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Enter Second Number"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/etnum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp"
+        android:layout_marginStart="11dp"
+        android:onClick="onAddButtonClick"
+        android:text="Add"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addBtn"
+        android:layout_alignBottom="@+id/addBtn"
+        android:layout_toEndOf="@+id/addBtn"
+        android:onClick="onSubButtonClick"
+        android:text="Sub"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/subBtn"
+        android:layout_alignBottom="@+id/subBtn"
+        android:layout_toEndOf="@+id/subBtn"
+        android:onClick="onMulButtonClick"
+        android:text="Mul"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mulBtn"
+        android:layout_toEndOf="@+id/mulBtn"
+        android:onClick="onDIvButtonClick"
+        android:text="Div"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnum2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+</RelativeLayout>
